@@ -12,15 +12,11 @@
 		#blush {
 			color: #e05e25;
 		}
-		#dusty {
-			color: #B96553
+		#yellow {
+			color: #FFEDA5;
 		}
 		.center {
 			text-align: center;
-		}
-		.button {
-			position: absolute;
-			top: 50%;
 		}
 		img.center {
 			display: block;
@@ -39,6 +35,30 @@
 			margin-top:20px ;
 			margin-bottom:50px ;
 		}
+		#container {
+			text-align: center
+			height: 400px;
+			width: 900px;
+			background: url("images/corkboard.jpg"); 
+		}
+		#div1 {
+			float: left;
+			height:400px;
+			width:300px;
+			background: url("images/cropped_CiC.jpg");
+		}
+		#div2 {
+			float: left;
+			height:400px;
+			width:300px;
+			background: url("images/cropped_FB");
+		}
+		#div3 {
+			float: left;
+			height:400px;
+			width:300px;
+			background: url("images/cropped_GWC");
+		}
 	</style>
 
 	<head>
@@ -47,7 +67,7 @@
 
 	<body>
 		<p> 
-			<img class="center" src="images\cropped_dumbo.JPG" width=80%>
+			<img class="center" src="images\cropped_dumbo.JPG" width=80% border="5px" style="border-color: #e05e25 ">
 		</p>
 		<div>
 			<h1 id="blush" class= "font center"> Angela's Portfolio </h1>
@@ -68,7 +88,14 @@
 				<li> League of Environmental and Animal Protection \\ 4-Year Member \\ 2017 Secretary, 2018 President </li>
 			</ul>
 
-			<p id="dusty" class="center"> Recently I've visited the <em> loml: school addition </em> , aka the University of Pennsylvania. I will leave you all with a quotes from their founder and one of our founding fathers, <b> Ben Franklin </b>
+			<h2 id="blush" class="center"> Life Snapshots </h2>
+			<div id="container">
+				<div id="div1"></div>
+				<div id="div2"></div>
+				<div id="div3"></div>
+			</div>
+
+			<p id="darkblue" class="center"> Recently I've visited the <em> loml: school addition </em> , aka the University of Pennsylvania. I will leave you all with a quotes from their founder and one of our founding fathers, <b> Ben Franklin </b>
 		
 			<blockquote id="blush" class="center"> 
 			<em> Tell me and I forget. Teach me and I remember. Involve me and I learn. </em>
@@ -78,8 +105,9 @@
 
 			<h2 id="blush" class="center"> Behold my favorite meme!</h2>
 			<p  id="simpsons" style="display:none"><img src='https://media.giphy.com/media/4pMX5rJ4PYAEM/giphy.gif'></img></p>
+
 			<div class="center">
-				<button class="button" type="button" onclick="document.getElementById('simpsons').style.display='block'">Click Me!</button>
+				<button type="button" onclick="document.getElementById('simpsons').style.display='block'">Click Me!</button>
 			</div>
 		</div>
 
