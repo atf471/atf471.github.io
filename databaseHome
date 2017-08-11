@@ -1,0 +1,17 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div>
+      <h4> TO DO LIST </h4>
+      <span>Today I need to accomplish: </span>
+      <span id="names"></span>
+      <br/><br/>
+
+      <input id="input" placeholder="things to do"></input>
+      <button id="addBtn" onclick="addToDo()">Add</button>
+      <br/><br/>
+
+    <div id="toDo"></div>
+  </body>
+</html>

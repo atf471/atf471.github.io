@@ -1,0 +1,35 @@
+<html>
+  <style>
+    .center {
+      text-align: center;
+    }
+    #purple {
+      color: #4d0099;
+    }
+  </style>
+  <head>
+  </head>
+  <body class="center">
+    <div>
+
+      <h1 class= "center" id= "purple"> TO DO LIST </h1>
+      
+      <div>
+        <img src="SpongeBobToDo.jpg" class="center" style="width:250px; height:225px";">
+        <br></br>
+      </div>
+
+      <h2>Today I need to accomplish: </h2>
+
+      <input id="input" placeholder="things to do..."></input>
+      <button type="button" onclick="addTodo()"> Add </button>
+      <!-- <button type="button" onclick="deleteChecks()"> Delete </button> -->
+      
+      <div id="plans"></div> 
+      <script src="db.js" type="text/javascript"></script>
+      <script src="app_skeleton.js" type="text/javascript"></script>
+      <br/><br/>
+    </div>
+
+  </body>
+</html>

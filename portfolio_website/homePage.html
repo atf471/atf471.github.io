@@ -1,13 +1,35 @@
 <html>
-	<style> 
-		body {
-			background: url("landscape2.JPG") center fixed;
-            background-size: cover; 
-            background-size: 100%;
-		}
-	</style>
-	<head>H O M E</head>
+	<head>
+
+		<style> 
+			body {
+				background: url("images/purp_city.JPG") center fixed;
+	            background-size: cover; 
+	            background-size: 100%;
+			}
+			.parallax {
+				background-image: url("images/zigzag.JPG");
+				/*background-size: cover;*/
+				min-height: 500px
+				background-attachment: fixed;
+	    		background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+			}
+			.center {
+				text-align: center;
+			}
+		</style>
+
+		<title>H O M E</title>
+	</head>
 	<body>
-		<h1> H O M E </h1>
+		<h1 class= "center"> H O M E </h1>
+		<div class= "parallax"></div>
+		<div style="height:500px; background("images/zigzag.JPG") font-size:36px">
+		Scroll Up and Down this page to see the parallax scrolling effect.
+		This div is just here to enable scrolling.
+		Tip: Try to remove the background-attachment property to remove the scrolling effect.
+		</div>
 	</body>
 </html>
